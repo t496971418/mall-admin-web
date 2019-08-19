@@ -2,12 +2,13 @@
  * @Author: Terryzh
  * @Date: 2019-08-19 17:23:55
  * @LastEditors: Terryzh
- * @LastEditTime: 2019-08-19 17:57:46
+ * @LastEditTime: 2019-08-19 19:14:32
  * @Description: 添加描述
  */
 
 import { getToken, setToken, removeToken } from '@/utils/auth'
-
+import {signinGQL} from '@/api/auth'
+import {apolloProvider} from '@/utils/request'
 const user = {
   state: {
     token: getToken(),
@@ -34,17 +35,12 @@ const user = {
   actions: {
     // 登录
     Login({ commit }, userInfo) {
-      const username = userInfo.username.trim()
-      return new Promise((resolve, reject) => {
-        login(username, userInfo.password).then(response => {
-          const data = response.data
-          const tokenStr = data.tokenHead+data.token
-          setToken(tokenStr)
-          commit('SET_TOKEN', tokenStr)
-          resolve()
-        }).catch(error => {
-          reject(error)
-        })
+      console.log('apolloProvider', apolloProvider)
+      return apolloProvider.defaultClient.mutate({
+        mutation: signinGQL,
+        variables: {
+          ...userInfo
+        }
       })
     },
 
