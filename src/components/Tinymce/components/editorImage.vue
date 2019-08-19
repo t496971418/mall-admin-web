@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:53:46
+ * @Description: 添加描述
+ -->
 <template>
   <div class="upload-container">
     <el-button icon='el-icon-upload' size="mini" :style="{background:color,borderColor:color}"
@@ -23,7 +30,6 @@
 </template>
 
 <script>
-  import {policy} from '@/api/oss'
 
   export default {
     name: 'editorSlideUpload',

@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="detail-container">
     <div>
@@ -347,7 +354,6 @@
   </div>
 </template>
 <script>
-  import {getOrderDetail,updateReceiverInfo,updateMoneyInfo,closeOrder,updateOrderNote,deleteOrder} from '@/api/order';
   import LogisticsDialog from '@/views/oms/order/components/logisticsDialog';
   import {formatDate} from '@/utils/date';
   import VDistpicker from 'v-distpicker';
@@ -711,5 +717,3 @@
     color: #303133;
   }
 </style>
-
-

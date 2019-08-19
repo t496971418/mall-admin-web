@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:20
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
@@ -139,7 +146,6 @@
   </div>
 </template>
 <script>
-  import {fetchList,updateStatus,deleteHomeAdvertise} from '@/api/homeAdvertise';
   import {formatDate} from '@/utils/date';
   const defaultListQuery = {
     pageNum: 1,
@@ -303,5 +309,3 @@
     width: 203px;
   }
 </style>
-
-

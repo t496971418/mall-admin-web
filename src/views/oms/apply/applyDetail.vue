@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:54:28
+ * @Description: 添加描述
+ -->
 <template>
   <div class="detail-container">
     <el-card shadow="never">
@@ -195,8 +202,6 @@
   </div>
 </template>
 <script>
-  import {getApplyDetail,updateApplyStatus} from '@/api/returnApply';
-  import {fetchList} from '@/api/companyAddress';
   import {formatDate} from '@/utils/date';
 
   const defaultUpdateStatusParam = {
@@ -383,5 +388,3 @@
     background: #F2F6FC;
   }
 </style>
-
-

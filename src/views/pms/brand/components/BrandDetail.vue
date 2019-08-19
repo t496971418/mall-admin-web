@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <el-card class="form-container" shadow="never">
     <el-form :model="brand" :rules="rules" ref="brandFrom" label-width="150px">
@@ -43,7 +50,6 @@
   </el-card>
 </template>
 <script>
-  import {createBrand, getBrand, updateBrand} from '@/api/brand'
   import SingleUpload from '@/components/Upload/singleUpload'
   const defaultBrand={
     bigPic: '',
@@ -141,5 +147,3 @@
 </script>
 <style>
 </style>
-
-

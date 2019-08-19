@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:55:25
+ * @Description: 添加描述
+ -->
 <template> 
   <el-card class="form-container" shadow="never">
     <el-steps :active="active" finish-status="success" align-center>
@@ -40,7 +47,6 @@
   import ProductSaleDetail from './ProductSaleDetail';
   import ProductAttrDetail from './ProductAttrDetail';
   import ProductRelationDetail from './ProductRelationDetail';
-  import {createProduct,getProduct,updateProduct} from '@/api/product';
 
   const defaultProductParam = {
     albumPics: '',
@@ -181,5 +187,3 @@
     width: 800px;
   }
 </style>
-
-

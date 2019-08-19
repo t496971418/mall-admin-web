@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:54:47
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -50,7 +57,6 @@
   </div>
 </template>
 <script>
-  import {deliveryOrder} from '@/api/order'
   const defaultLogisticsCompanies=["顺丰快递","圆通快递","中通快递","韵达快递"];
   export default {
     name: 'deliverOrderList',
@@ -91,5 +97,3 @@
   }
 </script>
 <style></style>
-
-

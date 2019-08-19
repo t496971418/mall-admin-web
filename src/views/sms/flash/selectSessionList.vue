@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card shadow="never" class="operate-container">
@@ -37,7 +44,6 @@
   </div>
 </template>
 <script>
-  import {fetchSelectList} from '@/api/flashSession';
   import {formatDate} from '@/utils/date';
   export default {
     name: 'selectSessionList',
@@ -79,5 +85,3 @@
     margin-top: 0;
   }
 </style>
-
-

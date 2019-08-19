@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:54:01
+ * @Description: 添加描述
+ -->
 <template> 
   <div>
     <el-upload
@@ -19,7 +26,6 @@
   </div>
 </template>
 <script>
-  import {policy} from '@/api/oss'
 
   export default {
     name: 'singleUpload',
@@ -105,5 +111,3 @@
 <style>
 
 </style>
-
-

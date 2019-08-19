@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:55:54
+ * @Description: 添加描述
+ -->
 <template>
   <el-card class="form-container" shadow="never">
     <el-form :model="productAttr" :rules="rules" ref="productAttrFrom" label-width="150px">
@@ -67,8 +74,6 @@
 </template>
 
 <script>
-  import {fetchList} from '@/api/productAttrCate'
-  import {createProductAttr,getProductAttr,updateProductAttr} from '@/api/productAttr'
 
   const defaultProductAttr = {
     filterType: 0,

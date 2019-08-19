@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:54:40
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -106,7 +113,6 @@
 </template>
 <script>
   import {formatDate} from '@/utils/date';
-  import {fetchList,deleteReason,updateStatus,addReason,getReasonDetail,updateReason} from '@/api/returnReason';
   const defaultListQuery = {
     pageNum: 1,
     pageSize: 5
@@ -269,5 +275,3 @@
     width: 80%;
   }
 </style>
-
-

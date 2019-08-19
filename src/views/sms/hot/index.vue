@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:57:06
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
@@ -170,8 +177,6 @@
   </div>
 </template>
 <script>
-  import {fetchList,updateRecommendStatus,deleteHotProduct,createHotProduct,updateHotProductSort} from '@/api/hotProduct';
-  import {fetchList as fetchProductList} from '@/api/product';
 
   const defaultListQuery = {
     pageNum: 1,

@@ -1,66 +1,37 @@
-import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
-import store from '../store'
-import { getToken } from '@/utils/auth'
+/*
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:45:11
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:49:42
+ * @Description: add request
+ */
+import Vue from 'vue'
+import { ApolloClient } from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import fetch from 'unfetch'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+import VueApollo from 'vue-apollo'
+// 组件中使用 this.$apollo 调用 apollo
+Vue.use(VueApollo)
 
-// 创建axios实例
-const service = axios.create({
-  baseURL: process.env.BASE_API, // api的base_url
-  timeout: 15000 // 请求超时时间
-})
+const debug = process.env.NODE_ENV !== 'production'
 
-// request拦截器
-service.interceptors.request.use(config => {
-  if (store.getters.token) {
-    config.headers['Authorization'] = getToken() // 让每个请求携带自定义token 请根据实际情况自行修改
-  }
-  return config
-}, error => {
-  // Do something with request error
-  console.log(error) // for debug
-  Promise.reject(error)
-})
+let loading = 0
 
-// respone拦截器
-service.interceptors.response.use(
-  response => {
-  /**
-  * code为非200是抛错 可结合自己业务进行修改
-  */
-    const res = response.data
-    if (res.code !== 200) {
-      Message({
-        message: res.message,
-        type: 'error',
-        duration: 3 * 1000
-      })
+function newApolloClient(arg) {
+  return new ApolloClient({
+    link: new HttpLink({ uri: `http://47.106.13.221:89/api/${arg}/graphql`, fetch: fetch }),
+    cache: new InMemoryCache(),
+    connectToDevTools: debug
+  })
+}
+const defaultClient = newApolloClient(`auth`)
+const mall = newApolloClient(`menu`)
 
-      // 401:未登录;
-      if (res.code === 401||res.code === 403) {
-        MessageBox.confirm('你已被登出，可以取消继续留在该页面，或者重新登录', '确定登出', {
-          confirmButtonText: '重新登录',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(() => {
-          store.dispatch('FedLogOut').then(() => {
-            location.reload()// 为了重新实例化vue-router对象 避免bug
-          })
-        })
-      }
-      return Promise.reject('error')
-    } else {
-      return response.data
-    }
+// Create the apolloProvider
+export const apolloProvider = new VueApollo({
+  clients: {
+    mall,
   },
-  error => {
-    console.log('err' + error)// for debug
-    Message({
-      message: error.message,
-      type: 'error',
-      duration: 3 * 1000
-    })
-    return Promise.reject(error)
-  }
-)
-
-export default service
+  defaultClient
+})

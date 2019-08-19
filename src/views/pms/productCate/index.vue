@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:12
+ * @Description: 添加描述
+ -->
 <template>
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -97,7 +104,6 @@
 </template>
 
 <script>
-  import {fetchList,deleteProductCate,updateShowStatus,updateNavStatus} from '@/api/productCate'
 
   export default {
     name: "productCateList",

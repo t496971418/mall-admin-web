@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <el-card class="form-container" shadow="never">
     <el-form :model="homeAdvertise"
@@ -63,7 +70,6 @@
 </template>
 <script>
   import SingleUpload from '@/components/Upload/singleUpload'
-  import {createHomeAdvertise, getHomeAdvertise, updateHomeAdvertise} from '@/api/homeAdvertise'
   const defaultTypeOptions = [
     {
       label: 'PC首页轮播',
@@ -181,5 +187,3 @@
     width: 70%;
   }
 </style>
-
-

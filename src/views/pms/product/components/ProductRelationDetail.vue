@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:55:35
+ * @Description: 添加描述
+ -->
 <template>
   <div style="margin-top: 50px">
     <el-form :model="value"
@@ -36,8 +43,6 @@
 </template>
 
 <script>
-  import {fetchListAll as fetchSubjectList} from '@/api/subject'
-  import {fetchList as fetchPrefrenceAreaList} from '@/api/prefrenceArea'
 
   export default {
     name: "ProductRelationDetail",

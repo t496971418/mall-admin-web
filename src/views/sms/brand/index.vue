@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
@@ -170,8 +177,6 @@
   </div>
 </template>
 <script>
-  import {fetchList,updateRecommendStatus,deleteHomeBrand,createHomeBrand,updateHomeBrandSort} from '@/api/homeBrand';
-  import {fetchList as fetchBrandList} from '@/api/brand';
 
   const defaultListQuery = {
     pageNum: 1,
@@ -429,5 +434,3 @@
   }
 </script>
 <style></style>
-
-

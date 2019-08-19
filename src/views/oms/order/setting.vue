@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:55:04
+ * @Description: 添加描述
+ -->
 <template> 
   <el-card class="form-container" shadow="never">
     <el-form :model="orderSetting"
@@ -43,7 +50,6 @@
   </el-card>
 </template>
 <script>
-  import {getOrderSetting,updateOrderSetting} from '@/api/orderSetting';
   const defaultOrderSetting = {
     id: null,
     flashOrderOvertime: 0,
@@ -123,5 +129,3 @@
     margin-left: 15px;
   }
 </style>
-
-

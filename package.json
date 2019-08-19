@@ -10,15 +10,21 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "ali-oss": "^6.1.1",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.15",
     "axios": "^0.18.0",
     "echarts": "^4.2.0-rc.2",
     "element-ui": "^2.3.7",
     "js-cookie": "^2.2.0",
     "normalize.css": "^8.0.0",
     "nprogress": "^0.2.0",
+    "unfetch": "^4.1.0",
     "v-charts": "^1.19.0",
     "v-distpicker": "^1.0.20",
     "vue": "^2.5.2",
+    "vue-apollo": "^3.0.0-rc.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

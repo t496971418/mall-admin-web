@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:23:55
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <div class="table-layout">
@@ -115,8 +122,6 @@
 </template>
 <script>
   import {formatDate} from '@/utils/date';
-  import {getCoupon} from '@/api/coupon';
-  import {fetchList as fetchCouponHistoryList} from '@/api/couponHistory';
 
   const defaultTypeOptions = [
     {
@@ -309,5 +314,3 @@
     color: #303133;
   }
 </style>
-
-

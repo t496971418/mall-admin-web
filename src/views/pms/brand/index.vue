@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:55:15
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
@@ -136,7 +143,6 @@
   </div>
 </template>
 <script>
-  import {fetchList, updateShowStatus, updateFactoryStatus, deleteBrand} from '@/api/brand'
 
   export default {
     name: 'brandList',
@@ -305,5 +311,3 @@
 
 
 </style>
-
-

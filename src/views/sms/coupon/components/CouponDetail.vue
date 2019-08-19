@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:31
+ * @Description: 添加描述
+ -->
 <template> 
   <el-card class="form-container" shadow="never">
     <el-form :model="coupon"
@@ -140,9 +147,6 @@
   </el-card>
 </template>
 <script>
-  import {createCoupon,getCoupon,updateCoupon} from '@/api/coupon';
-  import {fetchSimpleList as fetchProductList} from '@/api/product';
-  import {fetchListWithChildren} from '@/api/productCate'
   const defaultCoupon = {
     type: 0,
     name: null,
@@ -368,5 +372,3 @@
     width: 60%;
   }
 </style>
-
-

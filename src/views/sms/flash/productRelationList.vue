@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:50
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -146,8 +153,7 @@
   </div>
 </template>
 <script>
-  import {fetchList,createFlashProductRelation,deleteFlashProductRelation,updateFlashProductRelation} from '@/api/flashProductRelation';
-  import {fetchList as fetchProductList} from '@/api/product';
+
   const defaultListQuery = {
     pageNum: 1,
     pageSize: 5,
@@ -307,5 +313,3 @@
     width: 200px;
   }
 </style>
-
-

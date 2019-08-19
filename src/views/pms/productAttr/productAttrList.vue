@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:02
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
@@ -90,7 +97,6 @@
   </div>
 </template>
 <script>
-  import {fetchList, deleteProductAttr} from '@/api/productAttr'
 
   export default {
     name: 'productAttrList',
@@ -215,5 +221,3 @@
 <style rel="stylesheet/scss" lang="scss" scoped>
 
 </style>
-
-

@@ -1,4 +1,11 @@
-import { login, logout, getInfo } from '@/api/login'
+/*
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:57:46
+ * @Description: 添加描述
+ */
+
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const user = {

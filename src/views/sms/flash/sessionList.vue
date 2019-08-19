@@ -1,3 +1,10 @@
+<!--
+ * @Author: Terryzh
+ * @Date: 2019-08-19 17:23:55
+ * @LastEditors: Terryzh
+ * @LastEditTime: 2019-08-19 17:56:59
+ * @Description: 添加描述
+ -->
 <template> 
   <div class="app-container">
     <el-card shadow="never" class="operate-container">
@@ -83,7 +90,6 @@
   </div>
 </template>
 <script>
-  import {fetchList,updateStatus,deleteSession,createSession,updateSession} from '@/api/flashSession';
   import {formatDate} from '@/utils/date';
   const defaultFlashSession={
     name:null,
@@ -204,5 +210,3 @@
     margin-top: 0;
   }
 </style>
-
-
